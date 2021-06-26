@@ -3,10 +3,18 @@ require("dotenv").config();
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
+const bodyParser = require("body-parser");
+const cookieParser = require("cookie-parser");
+const cors = require("cors");
+const path = require("path");
+
+
+//importing routes
+const authRoutes = require("./routes/auth");
 
 //connecting to DB
 const Database = process.env.DATABASE
-mongoose.connect( Database, {
+mongoose.connect( process.env.MONGODURI ? process.env.MONGODURI: Database, {
   useNewUrlParser: true, 
   useUnifiedTopology: true,
   useCreateIndex: true,
@@ -14,6 +22,14 @@ mongoose.connect( Database, {
 }).then(() => {
   console.log("DB CONNECTED");
 });
+
+//middlewares
+app.use(bodyParser.json());
+app.use(cookieParser());
+app.use(cors());
+
+//routes middleware
+app.use("/api", authRoutes);
 
 //port
 const port = 8000 || process.env.PORT;
