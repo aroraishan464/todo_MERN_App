@@ -213,7 +213,7 @@ exports.checkAndSendForgetEmail = (req, res) => {
                     Data: "Test email"
                 }
             },
-            Source: "gypsydanger464@gmail.com"
+            Source: "gypsydanger464@gmail.com"  //your SES verified email here
         };
 
         const sendEmail = ses.sendEmail(params).promise();
