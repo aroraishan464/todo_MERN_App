@@ -11,10 +11,12 @@ const path = require("path");
 
 //importing routes
 const authRoutes = require("./routes/auth");
+const userRoutes = require("./routes/user");
+const todoRoutes = require("./routes/todo");
 
 //connecting to DB
-const Database = process.env.DATABASE
-mongoose.connect( process.env.MONGODURI ? process.env.MONGODURI: Database, {
+const Database = process.env.MONGODURI ? process.env.MONGODURI: process.env.DATABASE
+mongoose.connect( Database, {
   useNewUrlParser: true, 
   useUnifiedTopology: true,
   useCreateIndex: true,
@@ -30,6 +32,8 @@ app.use(cors());
 
 //routes middleware
 app.use("/api", authRoutes);
+app.use("/api", userRoutes);
+app.use("/api", todoRoutes);
 
 //port
 const port = 8000 || process.env.PORT;
