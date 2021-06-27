@@ -1,0 +1,243 @@
+@import "colors";
+
+#sideMenu {
+    position: absolute;
+    margin-top: 3vh;
+    height: 85vh;
+    width: 45%;
+    margin-left: -3vh;
+    background-image: url("../Core/icons/Ellipse.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    ul {
+        position: relative;
+        top: 20%;
+        left: 15%;
+        width: 60%;
+        list-style-type: none;
+
+        li {
+            padding-top: 15%;
+            font-size: 3.5vh;
+            font-weight: bold;
+            font-family: Tahoma, Verdana, Segoe, sans-serif;
+            cursor: pointer;
+        }
+
+        :hover {
+            text-decoration: underline;
+        }
+
+        #currentPage {
+            font-size: 5vh;
+            color: white;
+        }
+    }
+}
+
+.ProfileForm {
+    box-sizing: border-box;
+    margin: auto;
+    margin-top: 7vh;
+    margin-bottom: 1vh;
+    margin-right: 28vh;
+    height: 80vh;
+    width: 37%;
+    text-align: center;
+    // backdrop-filter: blur(30px);
+    border: 1px solid $border-color;
+    border-radius: 20px;
+
+    overflow: hidden;
+    position: relative;
+    &:before {
+        width: 43vw;
+        height: 90vh;
+        content: "";
+        position: absolute;
+        top: -3.7vh;
+        left: -5vw;
+        background-image: url("../ProfileFormBackground.png");
+        background-size: cover;
+        box-shadow: inset 0 0 0 200 rgba(100, 100, 100, 0.2);
+        filter: blur(30px);
+    }
+
+    #top {
+        position: relative;
+        z-index: 2;
+    }
+
+    p {
+        display: inline-block;
+        position: relative;
+        top: -15vh;
+        left: -8%;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    #backButton {
+        height: 7vh;
+        width: 60%;
+        position: relative;
+        margin-right: 3vh;
+        z-index: 2;
+    }
+
+    #profileDiv {
+        display: inline-block;
+        position: relative;
+        top: 2vh;
+        left: 2%;
+        z-index: 2;
+        border: 1px solid black;
+        background-color: lightgray;
+        border-radius: 10%;
+        width: 30%;
+        height: 25vh;
+        overflow: hidden;
+    }
+
+    #profilePic {
+        width: 100%;
+        padding-top: 1vh;
+    }
+
+    .Col {
+        position: relative;
+        text-align: left;
+        top: -4vh;
+        margin-bottom: 5%;
+        z-index: 2;
+
+        // border: 1px solid black;
+    }
+
+    .name {
+        position: relative;
+        font-weight: bold;
+        font-size: 2.5vh;
+        left: 15%;
+        font-family: Tahoma, Verdana, Segoe, sans-serif;
+    }
+
+    .colon {
+        position: relative;
+        font-weight: bold;
+        font-size: 2.5vh;
+        left: 25%;
+        font-family: Tahoma, Verdana, Segoe, sans-serif;
+    }
+
+    .editTextBox {
+        display: inline-block;
+        margin-left: 28.5%;
+        padding-bottom: 0.4vh;
+        width: 45%;
+        border-bottom: 2px solid black;
+
+        position: relative;
+        z-index: 2;
+
+        input {
+            border: none;
+            outline: none;
+            background: none;
+            width: 100%;
+            margin-left: 1vh;
+            font-size: 2vh;
+            font-weight: bold;
+            font-family: Tahoma, Verdana, Segoe, sans-serif;
+        }
+
+        ::placeholder {
+            color: black;
+            opacity: 0.9;
+            font-size: 2vh;
+        }
+
+        :-ms-input-placeholder {
+            color: black;
+            opacity: 0.9;
+            font-size: 2vh;
+        }
+
+        ::-ms-input-placeholder {
+            color: black;
+            opacity: 0.9;
+            font-size: 2vh;
+        }
+    }
+
+    .editInfoBox {
+        margin-left: 23%;
+    }
+
+    .fileTextBox {
+        width: 40%;
+    }
+
+    .emailvalue {
+        position: relative;
+        font-weight: bold;
+        font-size: 2.5vh;
+        left: 29.5%;
+        font-family: Tahoma, Verdana, Segoe, sans-serif;
+    }
+
+    .infoCol {
+        position: relative;
+        top: -5vh;
+        text-align: left;
+        z-index: 2;
+    }
+
+    .info {
+        display: inline-block;
+        position: relative;
+        font-weight: bold;
+        font-size: 2.5vh;
+        left: 15%;
+        font-family: Tahoma, Verdana, Segoe, sans-serif;
+    }
+
+    .colon1 {
+        position: relative;
+        font-weight: bold;
+        font-size: 2.5vh;
+        left: 19%;
+        font-family: Tahoma, Verdana, Segoe, sans-serif;
+    }
+
+    .infovalue {
+        display: inline-block;
+        position: relative;
+        font-weight: bold;
+        font-size: 2.5vh;
+        left: 23.5%;
+        width: 50%;
+        text-align: left;
+        vertical-align: middle;
+        font-family: Tahoma, Verdana, Segoe, sans-serif;
+    }
+
+    .changeBtn {
+        width: 45%;
+        padding: 1vh;
+        margin: auto;
+        margin-bottom: 2vh;
+        font-family: "Century Gothic";
+        font-weight: bold;
+        font-size: 2.5vh;
+        text-align: center;
+        border: none;
+        border-radius: 20px;
+        background-color: $pink;
+        cursor: pointer;
+
+        position: relative;
+        z-index: 2;
+    }
+}

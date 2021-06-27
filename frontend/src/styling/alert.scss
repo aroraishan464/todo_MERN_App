@@ -1,0 +1,21 @@
+@import 'colors';
+
+.alert {
+    position: relative;
+    z-index: 2;
+    display: block;
+    margin: auto;
+    padding: 1vh 2vw;
+    width: 35vw;
+    background-color: $pink;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5vh;
+    border-radius: 20px;
+    transition: opacity 0.5s;
+    i {
+        cursor: pointer;
+        float: right;
+    }
+}

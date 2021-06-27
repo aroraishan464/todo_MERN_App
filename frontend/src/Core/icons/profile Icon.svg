@@ -1,0 +1,8 @@
+<svg id="profile_Icon" data-name="profile Icon" xmlns="http://www.w3.org/2000/svg" width="38.365" height="38.365" viewBox="0 0 38.365 38.365">
+  <g id="outer" stroke="#000" stroke-width="1">
+    <circle cx="19.182" cy="19.182" r="19.182" stroke="none"/>
+    <circle cx="19.182" cy="19.182" r="18.682" fill="none"/>
+  </g>
+  <path id="body" d="M10.6,0h.538a10.6,10.6,0,0,1,10.6,10.6v0a2.827,2.827,0,0,1-2.827,2.827H2.827A2.827,2.827,0,0,1,0,10.6v0A10.6,10.6,0,0,1,10.6,0Z" transform="translate(8.312 17.264)" fill="#ea526f"/>
+  <circle id="head" cx="6.394" cy="6.394" r="6.394" transform="translate(12.788 3.836)" fill="#ea526f"/>
+</svg>

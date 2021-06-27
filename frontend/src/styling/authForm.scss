@@ -1,0 +1,128 @@
+@import "colors";
+
+.Form {
+    box-sizing: border-box;
+    margin: auto;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+    width: 30%;
+    text-align: center;
+    // backdrop-filter: blur(30px);
+    border: 1px solid $border-color;
+    border-radius: 20px;
+
+    overflow: hidden;
+    position: relative;
+    &:before {
+        width: 40vw;
+        height: 75vh;
+        content: "";
+        position: absolute;
+        top: -3.7vh;
+        left: -5vw;
+        background-image: url('../FormBackground.png');
+        background-size: cover;
+        box-shadow: inset 0 0 0 200 rgba(100, 100, 100, 0.2);
+        filter: blur(30px);
+    }
+
+    h1 {
+        font-family: "Freestyle Script";
+        font-weight: lighter;
+        font-size: 8vh;
+
+        position: relative;
+        z-index: 2;
+    }
+    .textBox {
+        margin: auto;
+        margin-bottom: 5vh;
+        padding-bottom: 0.4vh;
+        width: 50%;
+        border-bottom: 2px solid black;
+
+        position: relative;
+        z-index: 2;
+        i {
+            float: left;
+            margin-left: 0.7vw;
+            margin-top: 0.2vh;
+        }
+        input {
+            border: none;
+            outline: none;
+            background: none;
+            width: 80%;
+            margin-left: 1vh;
+            font-size: 2vh;
+        }
+        ::placeholder {
+            color: black;
+            opacity: 0.9;
+            font-size: 2vh;
+        }
+
+        :-ms-input-placeholder {
+            color: black;
+            opacity: 0.9;
+            font-size: 2vh;
+        }
+
+        ::-ms-input-placeholder {
+            color: black;
+            opacity: 0.9;
+            font-size: 2vh;
+        }
+    }
+    
+    .submit-btn {
+        width: 45%;
+        padding: 1vh;
+        margin: auto;
+        margin-top: 8vh;
+        font-family: "Century Gothic";
+        font-weight: bold;
+        font-size: 2.5vh;
+        text-align: center;
+        border: none;
+        border-radius: 20px;
+        background-color: $pink;
+        cursor: pointer;
+
+        position: relative;
+        z-index: 2;
+    }
+
+    h4 {
+        display: inline-block;
+        font-family: "Century Gothic";
+        font-weight: bold;
+        font-size: 2.2vh;
+        margin-bottom: 10vh;
+
+        position: relative;
+        z-index: 2;
+        &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+
+    h3 {
+        display: inline-block;
+        margin-top: 5vh;
+        margin-bottom: 3vh;
+        cursor: pointer;
+
+        position: relative;
+        z-index: 2;
+    }
+
+    #backButton {
+        height: 7vh;
+        width: 60%;
+
+        position: relative;
+        z-index: 2;
+    }
+}

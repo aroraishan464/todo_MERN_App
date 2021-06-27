@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+.todo-container {
+    width: 35%;
+    height: 85vh;
+    margin: auto;
+    margin-top: 3vh;
+    border-radius: 20px;
+    background: radial-gradient(#ffe3e0, #988c8b);
+    box-shadow: 6px 4px 15px black;
+    position: relative;
+}
+
+.todos-container {
+    position: absolute;
+    top: 33%;
+    left: 0;
+    right: 0;
+    height: 60%;
+    overflow-y: auto;
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+}

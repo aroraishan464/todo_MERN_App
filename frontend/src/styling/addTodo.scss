@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+
+.add-container {
+    position: absolute;
+    top: 22%;
+    left: 0;
+    right: 0;
+    height: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(#8a8686, #dc7b8e);
+    border-radius: 0 0 10px 10px;
+
+    .add_icon {
+        height: 60%;
+        margin-left: 1vw;
+    }
+    .textBox {
+        height: 70%;
+        flex-grow: 1;
+        text-align: center;
+        margin-left: 1vw;
+        border-bottom: 0.35vh solid #ffe3e0;
+
+        input {
+            margin-top: 0.5vh;
+            height: 90%;
+            width: 90%;
+            outline: none;
+            border: none;
+            background: none;
+            color: white;
+            font-size: 2vh;
+            font-family: "Book Antiqua";
+            font-weight: bold;
+        }
+        ::placeholder {
+            color: white;
+            opacity: 0.9;
+            font-size: 2.2vh;
+        }
+
+        :-ms-input-placeholder {
+            color: white;
+            opacity: 0.9;
+            font-size: 2.2vh;
+        }
+
+        ::-ms-input-placeholder {
+            color: white;
+            opacity: 0.9;
+            font-size: 2.2vh;
+        }
+    }
+    .addTodo-btn {
+        margin-left: 1vw;
+        margin-right: 1vw;
+        background: white;
+        padding: 0.5vh 1vw;
+        border-radius: 20px;
+        font-family: "Book Antiqua";
+        font-size: 3vh;
+        font-weight: bolder;
+        transition: 0.5s;
+        cursor: pointer;
+
+        &:hover{
+            background-color: lightgray;
+        }
+    }
+}

@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}   
+
+.upper-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 22%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px 20px 0 0;
+    background: linear-gradient(#d9576f, #d18c99);
+
+    .welcome {
+        height: 100%;
+        width: 50%;
+        padding-top: 1.5h;
+        text-align: center;
+        font-size: 4vh;
+        font-family: "Book Antiqua";
+        color: white;
+        #username {
+            font-size: 3vh;
+            text-transform: capitalize;
+        }
+    }
+
+    .clock {
+        height: 100%;
+        width: 50%;
+        padding-top: 2.75vh;
+        padding-right: 4vw;
+        text-align: center;
+        font-size: 3vh;
+        font-family: "Book Antiqua";
+        color: white;
+    }
+}

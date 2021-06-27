@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+
+.todos-container {
+    li {
+        margin-left: 0;
+        margin-top: 2vh;
+        display: flex;
+        align-items: center;
+    }
+    input[type="checkbox"] {
+        float: left;
+
+        box-sizing: border-box;
+        width: 6.5vh;
+        height: 6.5vh;
+        margin-left: 7%;
+        -webkit-appearance: none;
+        background-color: white;
+        border: 3px solid #707070;
+        outline: none;
+        border-radius: 15px;
+        vertical-align: middle;
+        transition: 0.5s;
+    }
+    input:checked[type="checkbox"] {
+        padding: 0.5vh;
+        opacity: 0.9;
+        content: url("../user/icons/check.svg");
+    }
+    label {
+        float: left;
+        margin-left: 1.5%;
+        width: 63%;
+        height: 8vh;
+        padding: 1vh 2vh;
+        vertical-align: middle;
+        background-color: white;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        border: 3px solid #707070;
+        border-radius: 20px 0 0 20px;
+        transition: 0.5s;
+        font-size: 2vh;
+        font-family: "Segoe Print";
+        font-weight: bold;
+        line-height: 2.25vh;
+        color: #535252;
+    }
+    .time {
+        position: relative;
+        top: -0.75vh;
+        display: inline-block;
+        border: 2px solid #e45a74;
+        border-radius: 20px;
+        padding: 0.25vh 0.5vw;
+        font-size: 1.5vh;
+        font-family: "Impact";
+        color: #707070;
+    }
+    input[type="checkbox"]:checked + label {
+        opacity: 0.8;
+        text-decoration: line-through;
+    }
+    .remove-todo {
+        float: left;
+        vertical-align: middle;
+        height: 8vh;
+        width: 4vw;
+        border: 3px solid #707070;
+        border-radius: 0 20px 20px 0;
+        text-align: center;
+        background-color: #e45a74;
+        transition: height 0.5s, background-color 0.25s;
+        cursor: pointer;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+            background-color: #707070;
+        }
+
+        img {
+            height: 4vh;
+            width: 2vw;
+        }
+    }
+}

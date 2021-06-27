@@ -1,0 +1,52 @@
+@import 'colors';
+
+body{
+    background-image: url("../Background.png");
+    background-size: cover;
+    height: 97vh;
+}
+.menu{
+    box-sizing: border-box;
+    background: $pink-light;
+    border-radius: 15px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    ul{
+        position: relative;
+        flex-grow: 1;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    li{
+        float: right;
+        padding: 1.3vh 6.05vh 1.3vh 0;
+        font-family: Tahoma, Geneva, sans-serif;
+        font-weight: bold;
+        font-size: 2.25vh;
+        cursor: pointer;
+    }
+    #active-bar{
+        position: absolute;
+        top: 80%;
+        width: 10vh;
+        height: 0.6vh;
+        background-color: black;
+        border-radius: 20px;
+        transition: 0.25s ease-out;
+    }
+    #logo{
+        margin-left: 1.5vw;
+        height: 6vh;
+    }
+    #profileIcon{
+        margin-right: 2vw;
+        height: 5.7vh;
+        width: 4.3vh;
+        float: right;
+        border-radius: 40%;
+        cursor: pointer;
+    }
+}
