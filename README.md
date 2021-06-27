@@ -31,7 +31,7 @@ This ToDo App is made using MERN stack along with [AWS SES](https://aws.amazon.c
 
 3. Create AWS account and IAM account (preferable).
 4. Verify sender and receiver email in SES since by default the SES is in sandbox mode. (use this [link](https://docs.aws.amazon.com/ses/latest/DeveloperGuide/verify-email-addresses.html))
-5. Create an S3 bucket and make it public so that it can be accessed by our app hosted on local server. (use this [link](https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteAccessPermissionsReqd.html#block-public-access-static-site))
+5. Create an S3 bucket and make it public so that it can be accessed by the app hosted on local server. (use this [link](https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteAccessPermissionsReqd.html#block-public-access-static-site))
 5. Move to backend directory. Create a `.env` file and insert the following code. Replace values with yours!!
 
     ```
