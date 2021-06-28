@@ -38,7 +38,7 @@ const AddTodo = ({ updateTodoList, todoList, getInitialTodoList }) => {
             <div className="add-container">
                 <img src={require('./icons/add_todo.svg')} alt="add todo icon" className="add_icon"></img>
                 <div className="textBox">
-                    <input type="text" placeholder="add todo here" value={inputValue} onChange={handleChange} />
+                    <input type="text" placeholder="write your todo here" value={inputValue} onChange={handleChange} />
                 </div>
                 <div className="addTodo-btn" onClick={addTodo}>ADD</div>
             </div>

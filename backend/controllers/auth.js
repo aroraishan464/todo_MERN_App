@@ -69,7 +69,7 @@ exports.signup = (req, res) => {
                     Data: "Test email"
                 }
             },
-            Source: "gypsydanger464@gmail.com" //your SES verified email here
+            Source: process.env.SOURCE_EMAIL_ADDRESS //your SES verified email here
         };
 
         const sendEmail = ses.sendEmail(params).promise();
@@ -103,7 +103,7 @@ exports.activate = (req, res) => {
                     err
                 });
             }
-            return res.redirect(process.env.FRONTEND_AUTHPAGE);
+            return res.redirect(`${process.env.FRONTEND}/authPage`);
         });
     });
 }
@@ -198,7 +198,7 @@ exports.checkAndSendForgetEmail = (req, res) => {
                         Charset: "UTF-8",
                         Data:
                             `<h1> Click on the below link to reset your password: </h1>
-                             <h3><a href="${process.env.FRONTEND_RESETPASS}/${token}">Reset password</a></h3>
+                             <h3><a href="${process.env.FRONTEND}/reset-password/${token}">Reset password</a></h3>
                              <h4> Please ignore if it wasn't for you </h40>`
                     },
                     Text: {
@@ -213,14 +213,14 @@ exports.checkAndSendForgetEmail = (req, res) => {
                     Data: "Test email"
                 }
             },
-            Source: "gypsydanger464@gmail.com"  //your SES verified email here
+            Source: process.env.SOURCE_EMAIL_ADDRESS  //your SES verified email here
         };
 
         const sendEmail = ses.sendEmail(params).promise();
 
         sendEmail
             .then(data => {
-                console.log("email submitted to SES", data);
+                console.log("email submitted to SES");
             })
             .catch(error => {
                 console.log(error);

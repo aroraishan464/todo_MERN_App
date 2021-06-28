@@ -31,7 +31,6 @@ This ToDo App is made using MERN stack along with [AWS SES](https://aws.amazon.c
 
 3. Create AWS account and IAM account (preferable).
 4. Verify sender and receiver email in SES since by default the SES is in sandbox mode. (use this [link](https://docs.aws.amazon.com/ses/latest/DeveloperGuide/verify-email-addresses.html))
-5. Edit source email address and html body in backend->controllers->auth.js (signup and checkAndSendForgetEmail controller) 
 5. Create an S3 bucket and make it public so that it can be accessed by the app hosted on local server. (use this [link](https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteAccessPermissionsReqd.html#block-public-access-static-site))
 5. Move to backend directory. Create a `.env` file and insert the following code. Replace values with yours!!
 
@@ -39,9 +38,9 @@ This ToDo App is made using MERN stack along with [AWS SES](https://aws.amazon.c
     PORT=YOUR_PORT
     DATABASE=mongodb://localhost:27017/todo
     SECRET=STRING_FOR_ENCRYPTING(eg. myapp)
-    FRONTEND_AUTHPAGE=http://localhost:3000/authPage
-    FRONTEND_RESETPAGE=http://localhost:3000/reset-password
+    FRONTEND=http://localhost:3000
     BACKEND=http://localhost:8000
+    SOURCE_EMAIL_ADDRESS=YOUR_SES_VERIFIED_SENDER_EMAIL
     
     AWS_ACCESS_KEY_ID=YOUR_IAM_ACCESS_KEY
     AWS_ACCESS_SECRET_KEY_ID=YOUR_IAM_SECRET_KEY
@@ -49,7 +48,7 @@ This ToDo App is made using MERN stack along with [AWS SES](https://aws.amazon.c
     AWS_BUCKET_NAME=YOUR_BUCKET_NAME
     AWS_Uploaded_File_URL_LINK=LINK_TO_BUCKET
     ```
-    - In case the project is to be deployed on AWS EC2 or any other hosting platform, use public IP or domain name in place of localhost for FRONTEND_AUTHPAGE (publicIP/authPage), FRONTEND_RESETPAGE (publicIP/reset-password), BACKEND (publicIP). 
+    - In case the project is to be deployed on AWS EC2 or any other hosting platform, use public IP or domain name in place of localhost for FRONTEND and BACKEND variables in `.env` file. 
    - In AWS_Uploaded_File_URL_LINK, use the path where you want to store profile pics (eg. https://bucketName.s3.bucketRegion.amazonaws.com/).
 
 5. Start MongoDB server (use this [link](https://docs.mongodb.com/manual/administration/install-community/))
@@ -73,7 +72,7 @@ This ToDo App is made using MERN stack along with [AWS SES](https://aws.amazon.c
 
 <img src="https://user-images.githubusercontent.com/46368329/123551459-79e0c180-d78f-11eb-85a7-5a020cbf0d7e.png" width="45%"> <img src="https://user-images.githubusercontent.com/46368329/123551451-76e5d100-d78f-11eb-9e71-7043081fe94d.png" width="45%">
 
-<img src="https://user-images.githubusercontent.com/46368329/123551452-777e6780-d78f-11eb-8eaf-75d7b78dbf4d.png" width="45%"> <img src="https://user-images.githubusercontent.com/46368329/123551454-7816fe00-d78f-11eb-94f7-02eb492e4f2d.png" width="45%">
+<img src="https://user-images.githubusercontent.com/46368329/123587488-ff9e5480-d803-11eb-9585-b77207f9b259.png" width="45%"> <img src="https://user-images.githubusercontent.com/46368329/123587498-01681800-d804-11eb-87db-d5c748297ed8.png" width="45%">
 
 <img src="https://user-images.githubusercontent.com/46368329/123551456-78af9480-d78f-11eb-8eba-f31f4308d95a.png" width="45%"> <img src="https://user-images.githubusercontent.com/46368329/123551458-79482b00-d78f-11eb-9d31-2d5edd8504df.png" width="45%">
 
