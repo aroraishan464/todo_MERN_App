@@ -2,7 +2,7 @@
 # Todo MERN App <img src="https://user-images.githubusercontent.com/46368329/123548291-cf15d680-d781-11eb-8c36-e70fdc1dd822.jpeg" height=50 align="center">
 **MERN Stack** is a Javascript Stack that is used for easier and faster deployment of full-stack web applications. MERN Stack comprises of 4 technologies namely: [MongoDB](https://www.mongodb.com/), [Express](https://expressjs.com/), [React](https://reactjs.org/) and [Node.js](https://nodejs.org/en/). It is designed to make the development process smoother and easier.  
 
-## Quick liks
+## Quick links
 1. [Introduction](#introduction)
 2. [Requirements](#requirements)
 3. [Installation and Usage](#installation-and-usage)
